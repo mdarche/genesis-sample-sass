@@ -1,0 +1,16 @@
+{
+  "name": "genesis-sass",
+  "version": "1.0.0",
+  "description": "Add automatic scss compiler to genesis sample starting point",
+  "scripts": {
+    "css":
+      "node-sass --output-style expanded --include-path scss sass/style.scss style.css",
+    "watch": "nodemon -e scss -x \"npm run css\""
+  },
+  "author": "mdarche",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5"
+  }
+}
